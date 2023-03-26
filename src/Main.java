@@ -1,9 +1,14 @@
+import java.util.Scanner;
+
 class Main
 {
     public static void main(String[] args)
     {
-        int day=7;
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Please enter the day number");
+        int day= sc.nextInt();
         if(day>=1 && day<=7)
+        {
             if(day==1)
                 System.out.println("Sunday");
             if(day==2)
@@ -18,6 +23,9 @@ class Main
                 System.out.println("Friday");
             if(day==7)
                 System.out.println("Saturday");
+        }
         else System.out.println("invalid input");
     }
 }
+
+
